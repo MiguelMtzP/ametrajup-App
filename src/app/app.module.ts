@@ -5,6 +5,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpModule, JsonpModule} from '@angular/http';
 import {routing,appRoutingProviders} from './app.routing'
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -25,7 +28,15 @@ import { AlbumsComponent } from './albums/albums.component';
             FormsModule,
             HttpModule,
             routing,
-            ReactiveFormsModule
+            ReactiveFormsModule,
+            HttpClientModule,
+            TranslateModule.forRoot({
+              loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+              }
+            })
   ],
   declarations: [
             AppComponent,
@@ -44,3 +55,6 @@ import { AlbumsComponent } from './albums/albums.component';
   providers: [appRoutingProviders]
 })
 export class AppModule { }
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

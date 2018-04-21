@@ -7,12 +7,14 @@ import { EventosComponent } from "./eventos/eventos.component";
 import { AlbumsComponent } from "./albums/albums.component";
 import { HeaderComponent } from "./header/header.component";
 import { LoginComponent } from './login/login.component';
+import { InicioComponent } from './inicio/inicio.component';
 const appRoutes: Routes=[
   
   {path:'eventos',component:EventosComponent},
   {path:'album',component:AlbumsComponent},
   {path: 'login', component:LoginComponent},
-  {path:'**',component:HeaderComponent}
+  {path: '', component:InicioComponent},
+  {path:'**',redirectTo:""}
 
 ];
 
