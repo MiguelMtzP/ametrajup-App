@@ -1,3 +1,7 @@
 {
-"header-nav-quienesSomos":"¿Quienes Somos?"
+    "header-nav-quienesSomos":"¿Quienes Somos?",
+    "header-nav-eventos":"Eventos",
+    "header-nav-foro":"Foro",
+    "header-nav-miCuenta":"Mi Cuenta",
+    "header-nav-iniciarSesion":"Iniciar Sesion"
 }

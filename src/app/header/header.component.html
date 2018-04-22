@@ -1,6 +1,8 @@
 <div class="row mt-md-4">
   <div class="col-md-2">
-    <img src="../../assets/logo.jpeg" alt="" class="img-fluid img-logo">
+    <a href="#" [routerLink] = "['/']">
+      <img src="../../assets/logo.jpeg"  alt="" class="img-fluid img-logo">
+    </a>
   </div>
   <div class="col-md-8 col-md-offset-1">
       <img src="../../assets/lema.jpeg" alt="" class="img-fluid img-lema">
@@ -11,20 +13,21 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+    <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
       <ul class="navbar-nav ml-md-2">
-        <li class="nav-item active ">
-          <a class="nav-link" href="#" translate>header-nav-quienesSomos<span class="sr-only">(current)</span></a>
+        <li class="nav-item  ">
+          <a class="nav-link" href="#" [routerLink]="['/aboutUs']" routerLinkActive translate>header-nav-quienesSomos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" title></a>
+          <a class="nav-link" href="#" [routerLink] = "['/eventos']" routerLinkActive translate>header-nav-eventos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#" [routerLink] = "['/foro']" routerLinkActive translate>header-nav-foro</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#" [routerLink] = "['/login']" routerLinkActive translate>header-nav-iniciarSesion</a>
         </li>
       </ul>
     </div>
   </nav>
+  <br>
