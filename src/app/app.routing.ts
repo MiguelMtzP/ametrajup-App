@@ -9,13 +9,15 @@ import { HeaderComponent } from "./header/header.component";
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ForoComponent } from "./foro/foro.component";
+import { RegistroComponent } from './registro/registro.component';
 const appRoutes: Routes=[
   
   {path:'eventos',component:EventosComponent},
   {path:'album',component:AlbumsComponent},
-  {path:'login', component:LoginComponent},
   {path:'aboutUs',component:AboutUsComponent},
   {path:'foro',component:ForoComponent},
+  {path: 'login', component:LoginComponent},
+  {path: 'registro', component:RegistroComponent},
   {path: '', component:InicioComponent},
   {path:'**',redirectTo:""},
 
