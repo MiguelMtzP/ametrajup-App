@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ForoComponent } from "./foro/foro.component";
 import { RegistroComponent } from './registro/registro.component';
+import { ContactanosComponent } from './contactanos/contactanos.component';
+
 const appRoutes: Routes=[
   
   {path:'eventos',component:EventosComponent},
@@ -18,6 +20,8 @@ const appRoutes: Routes=[
   {path:'foro',component:ForoComponent},
   {path: 'login', component:LoginComponent},
   {path: 'registro', component:RegistroComponent},
+  {path: 'contactanos', component:ContactanosComponent},
+  {path: 'inicio', component:InicioComponent},
   {path: '', component:InicioComponent},
   {path:'**',redirectTo:""},
 
