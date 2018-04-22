@@ -1,3 +1,51 @@
 {
-"header-nav-quienesSomos":"¿Quienes Somos?"
+"header-nav-quienesSomos":"¿Quienes Somos?",
+"header-nav-eventos":"Eventos",
+"header-nav-foro":"Foro",
+"header-nav-iniciarSesion":"Iniciar Sesion",
+
+"login-bienvenido":"Bienvenido",
+"login-ametrajub":"Ametrajub A.C.",
+"login-email":"Correo Electrónico",
+"login-email2":"correo@ejemplo.com",
+"login-emailInfo":"Correo con el cual se registro previamente",
+"login-pass":"Contraseña",
+"login-pass2":"Contraseña",
+"login-button-iniciarSesion":"Iniciar Sesión",
+"login-button-registro":"Registrarse",
+
+"registro-bienvenido":"Bienvenido",
+"registro-nuevoRegistro":"Nuevo Registro",
+"registro-email":"Correo Electrónico",
+"registro-email2":"correo@ejemplo.com",
+"registro-pass":"Contraseña",
+"registro-ocupacion":"Ocupación",
+"registro-ocupacionInfo":"Doctor, Albañil ,Agricultor, Enfermera, etc.",
+"registro-pais":"País",
+"registro-pais1":"México",
+"registro-pais2":"Alemania",
+"registro-pais3":"Argentina",
+"registro-pais4":"Brasil",
+"registro-pais5":"Canadá",
+"registro-pais6":"Costa Rica",
+"registro-pais7":"Cuba",
+"registro-pais8":"Estados Unidos",
+"registro-pais9":"España",
+"registro-pais10":"Francia",
+"registro-pais11":"Guatemala",
+"registro-pais12":"Honduras",
+"registro-pais13":"Italia",
+"registro-pais14":"Nicaragua",
+"registro-pais15":"Rusia",
+"registro-pais16":"Otro País",
+"registro-ciudad":"Ciudad",
+"registro-ciudad2":"Ciudad",
+"registro-estado":"Estado",
+"registro-estado2":"Estado",
+"registro-telefono":"Telefono (Lada)",
+"registro-button-registro":"Registrarse"
+
+
+
+
 }
