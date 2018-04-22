@@ -11,6 +11,8 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ForoComponent } from "./foro/foro.component";
 import { EditarPerfilComponent } from "./editar-perfil/editar-perfil.component";
 import { RegistroComponent } from './registro/registro.component';
+import { ContactanosComponent } from './contactanos/contactanos.component';
+
 const appRoutes: Routes=[
   
   {path:'eventos',component:EventosComponent},

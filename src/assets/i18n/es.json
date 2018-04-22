@@ -53,6 +53,42 @@
     "registro-ciudad2":"Ciudad",
     "registro-estado":"Estado",
     "registro-estado2":"Estado",
-    "registro-telefono":"Telefono (Lada)",
-    "registro-button-registro":"Registrarse"
+    "registro-telefono":"Teléfono",
+    "registro-button-registro":"Registrarse",
+
+    "aboutus-nuestraHistoria":"Nuestra Historia",
+    "aboutus-nuestraHistoria-p1":"Nace con todas las formalidades y solemnidades legales el 28 de Enero de 2016. Por inquietud y necesidad de los señores José Manuel Emilio Lemus y Espinosa, Sergio Sánchez Flores y Juan Ramón Flores Martínez, entre otros muchos.",
+    "aboutus-nuestraHistoria-p2":"Viendo la gran necesidad de ayuda para sus compañeros jubilados como las grandes necesidades que imperan en nuestra sociedad sobre todo con grupos sociales o de personas en alto grado de vulnerabilidad y marginación. Se disponen a aprovechar su tiempo y experiencia poniendose a servir para ayudar tanto a sus compañeros jubilados como a la sociedad en general bastante dañada por la escases de valores humanos, tanto en la familia como en la persona lo que redunda en un gran problema social que es: la desintegración familiar, alcoholismo, drogadicción, deserción escolar, pandillerismo, y todo lo que ello conlleva, es por ello que deciden actuar como una asociación para ayudar a los que más lo necesitan.",
+    "aboutus-objetivoGeneral":"Objetivo General",
+    "aboutus-objetivoGeneral-p1":"Nuestra razón de ser es llevar un mensaje de esperanza, nosotros que nos hemos dado cuenta de que muchas personas han perdido todo o casi todo, nos atrevemos a dedicar nuestro tiempo a ayudar a estos hermanos de sufrimiento. La razón de ayudar a otros es por que nos estamos ayudando a nosotros mismos en contemplar nuestro caracter y ayudar a otros a resolver sus problemas existenciales. Los invitamos a que marchemos juntos, unidos, con entereza, fuerza y esperanza a levantar a los muertos de espíritu.",
+
+    "contactanos":"Contáctanos",
+    "contactanos-email":"Correo Electrónico",
+    "contactanos-ocupacion":"Ocupación",
+    "contactanos-telefono":"Teléfono",
+    "contactanos-interes":"Tema de interés",
+    "contactanos-interes1":"Elija por favor...",
+    "contactanos-interes2":"Información general acerca de la asociación",
+    "contactanos-interes3":"Información acerca de un servicio",
+    "contactanos-interes4":"Donaciones",
+    "contactanos-mensaje":"Mensaje adicional",
+    "contactanos-button-registrarse":"Enviar",
+
+    "inicio-mesaDirectiva":"Mesa Directiva",
+    "inicio-presidente":"Presidente",
+    "inicio-secretario":"Secretario",
+    "inicio-tesorero":"Tesorero",
+    "inicio-p":"José Manuel Emilio Lemus y Espinosa",
+    "inicio-s":"Sergio Sánchez Flores",
+    "inicio-t":"Juan Ramón Flores Martínez"
+    
+    
+    
+    
+    
+    
+    
+    
+
+
 }
