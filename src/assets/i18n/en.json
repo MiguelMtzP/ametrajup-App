@@ -15,6 +15,14 @@
     "login-button-iniciarSesion":"sign in",
     "login-button-registro":"Sign up",
 
+    "registro-nombres":"Name(s)",
+    "registro-empresa":"Company",
+    "registro-sector":"Sector",
+    "registro-Sexo":"Sex",
+    "registro-Hombre":"Man",
+    "registro-Mujer":"Woman",
+    "registro-apellidoPaterno":"Surname",
+    "registro-apellidoMaterno":"Second Surname",
     "registro-bienvenido":"Welcome",
     "registro-nuevoRegistro":"New User",
     "registro-email":"Email",
@@ -44,7 +52,8 @@
     "registro-estado":"State",
     "registro-estado2":"State",
     "registro-telefono":"Telephone",
-    "registro-button-registro":"Sign up",
+    "registro-button":"Sign up",
+    "registro-foto":"Profile photo",
 
     "aboutus-nuestraHistoria":"Our History",
     "aboutus-nuestraHistoria-p1":"It was born with all formalities and legal solemnities on January 28, 2016. By José María Emilio Lemus and Espinosa, Sergio Sánchez Flores and Juan Ramón Flores Martínez, among many others.",
@@ -63,6 +72,29 @@
     "contactanos-interes4":"Donations",
     "contactanos-mensaje":"Additional message",
     "contactanos-button-registrarse":"Send",
+    "contactanos-via":"Alternate Contacts",
+    "contactanos-tel": "Office Phone: (222)2-22-22-22",
+
+    "inicio-servicio":"Services we offer:",
+    "inicio-servicio-asesoria":"Advices",
+    "inicio-servicio-asesoria-legal":"Legal",
+    "inicio-servicio-asesoria-juridica":"Juridical",
+    "inicio-servicio-curso":"Training courses",
+    "inicio-servicio-curso1":"Plumbing",
+    "inicio-servicio-curso2":"Electricity",
+    "inicio-servicio-curso3":"Bakery",
+    "inicio-servicio-curso4":"Carpentry",
+    "inicio-servicio-curso5":"Corte y Conflexión",
+    "inicio-servicio-pago":"Advice on payments",
+    "inicio-servicio-pago1":"Afore",
+    "inicio-servicio-pago2":"Funeral expenses",
+    "inicio-servicio-pago3":"Testamentary documents",
+    "inicio-servicio-familiar":"Family counseling",
+    "inicio-servicio-familiar1":"Drug addiction",
+    "inicio-servicio-familiar2":"Alcoholism",
+    "inicio-servicio-familiar3":"School Dropout",
+    "inicio-servicio-familiar4":"Violence against women",
+    "inicio-servicio-familiar5":"Family breakup",
 
     "inicio-mesaDirectiva":"Board of Directors",
     "inicio-presidente":"President",
@@ -70,8 +102,9 @@
     "inicio-tesorero":"Treasurer",
     "inicio-p":"José Manuel Emilio Lemus y Espinosa",
     "inicio-s":"Sergio Sánchez Flores",
-    "inicio-t":"Juan Ramón Flores Martínez"
+    "inicio-t":"Juan Ramón Flores Martínez",
     
-
+    "editar-button-guardar":"Save",
+    "editar-miPerfil":"My Profile"
 
 }
