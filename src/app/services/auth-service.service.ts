@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Http, Response, Headers} from '@angular/http';
+import {Http, Response, Headers,RequestOptions} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Observable';
 import { Usuario } from '../models/Usuario';
@@ -26,24 +26,24 @@ export class AuthServiceService {
   }
 
   registro(foto:File,user:Usuario){
-    return new Promise((resolve,reject)=>{
-      var formData = new FormData();
+    let jwtAuth = "jwt "+localStorage.getItem("token")
+    var formData = new FormData();
+    formData.append('fotoPerfil',foto,foto.name);
+    formData.append("nombre",user.nombre)
+    formData.append("apellidoPaterno",user.apellidoPaterno)
+    formData.append("apellidoMaterno",user.apellidoMaterno)
+    formData.append("correo",user.correo)
+    formData.append("genero",user.genero)
+    formData.append("ocupacion",user.ocupacion)
+    formData.append("telefono",user.telefono)
+    formData.append("contrasenia",user.contrasenia)
+    formData.append("empresa",user.empresa)
+    formData.append("sector",user.sector)
+    formData.append("pais",user.pais)
+    formData.append("ciudad",user.ciudad)
+    formData.append("estado",user.estado)
+    /*return new Promise((resolve,reject)=>{
       var xhr= new XMLHttpRequest();
-      let jwtAuth = "jwt "+localStorage.getItem("token")
-      formData.append('fotoPerfil',foto,foto.name);
-      formData.append("nombre",user.nombre)
-      formData.append("apellidoPaterno",user.apellidoPaterno)
-      formData.append("apellidoMaterno",user.apellidoMaterno)
-      formData.append("correo",user.correo)
-      formData.append("genero",user.genero)
-      formData.append("ocupacion",user.ocupacion)
-      formData.append("telefono",user.telefono)
-      formData.append("contrasenia",user.contrasenia)
-      formData.append("empresa",user.empresa)
-      formData.append("sector",user.sector)
-      formData.append("pais",user.pais)
-      formData.append("ciudad",user.ciudad)
-      formData.append("estado",user.estado)
       xhr.onreadystatechange= ()=>{
         if(xhr.readyState==4){
           if(xhr.status==200){
@@ -58,5 +58,12 @@ export class AuthServiceService {
       //cabeceras
       xhr.send(formData);
     });
+    */
+    const headers = new Headers({"Authorization":jwtAuth});
+    let options = new RequestOptions({ headers });
+    let url = this.url+"usuarios/";
+
+    return this._http.post(url, formData, options)
+                     .map(res=>res.json())
   }
 }

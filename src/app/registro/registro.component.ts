@@ -27,7 +27,7 @@ export class RegistroComponent implements OnInit {
   }
 
   enviaForm(){
-    this._authService.registro(this.foto,this.user).then(res=>{
+    this._authService.registro(this.foto,this.user).subscribe(res=>{
       console.log(res);
       localStorage.setItem("token",res.token)
       localStorage.setItem("nombre",res.usuarioRegistrado.nombre)
