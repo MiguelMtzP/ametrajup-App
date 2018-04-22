@@ -20,6 +20,7 @@ import { ForoComponent } from './foro/foro.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { AlbumsComponent } from './albums/albums.component';
             ForoComponent,
             LoginComponent,
             RegistroComponent,
-            AlbumsComponent
+            AlbumsComponent,
+            EditarPerfilComponent
   ],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]

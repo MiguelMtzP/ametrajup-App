@@ -13,7 +13,5 @@ constructor(private translate: TranslateService) {
   translate.setDefaultLang('es');
 }
 
-switchLanguage(language: string) {
-  this.translate.use(language);
-}
+
 }

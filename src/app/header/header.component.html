@@ -7,6 +7,10 @@
   <div class="col-md-8 col-md-offset-1">
       <img src="../../assets/lema.jpeg" alt="" class="img-fluid img-lema">
   </div>
+  <div class="col-md-2 d-flex  align-items-end flex-column">
+    <img *ngIf="idioma!='en'" (click)= "switchLanguage('en')" src="../../assets/ingles.png" alt="">
+    <img *ngIf="idioma!='es'" (click)="switchLanguage('es')" src="../../assets/espaniol.png" alt="">
+  </div>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -24,8 +28,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#" [routerLink] = "['/foro']" routerLinkActive translate>header-nav-foro</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" [routerLink] = "['/login']" routerLinkActive translate>header-nav-iniciarSesion</a>
+        <li class="nav-item" *ngIf="!_authServise.isLogged()">
+          <a class="nav-link" href="#" [routerLink] = "['/login']" routerLinkActive translate>header-nav-iniciarSesion</a>
+        </li>
+        <li class="nav-item" *ngIf="_authServise.isLogged()">
+          <a class="nav-link" href="#" [routerLink] = "['/miPerfil']" routerLinkActive translate>header-nav-miperfil</a>
         </li>
       </ul>
     </div>

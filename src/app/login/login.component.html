@@ -8,18 +8,18 @@
               
       </div>
       <div class="card-body">
-          <form>
+          <form #formaLogin = "ngForm" (ngSubmit)="onSubmit()" >
           <div class="form-group">
             <label for="exampleInputEmail1" translate>login-email</label>
-            <input type="email" class="form-control" id="Email1" aria-describedby="" placeholder="">
+            <input type="email" #mail="ngModel" class="form-control" [(ngModel)]="user" name="mail" id="Email1" aria-describedby="" placeholder="">
             <small id="emailHelp" class="form-text text-muted" translate>login-emailInfo</small>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1" translate>login-pass</label>
-            <input type="password" class="form-control" id="Password" placeholder="">
+            <input type="password" #pass= "ngModel" [(ngModel)] = "password" class="form-control" name="pass" id="Password" placeholder="">
           </div>
+          <button  class="btn btn-outline-primary" [routerLink]="['/registro']" translate>login-button-registro</button>
           <button type="submit" class="btn btn-primary" translate>login-button-iniciarSesion</button>
-          <button type="submit" class="btn btn-primary" translate>login-button-registro</button>
           </form>
         </div>
       </div>

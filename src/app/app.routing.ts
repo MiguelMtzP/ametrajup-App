@@ -9,6 +9,7 @@ import { HeaderComponent } from "./header/header.component";
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ForoComponent } from "./foro/foro.component";
+import { EditarPerfilComponent } from "./editar-perfil/editar-perfil.component";
 import { RegistroComponent } from './registro/registro.component';
 const appRoutes: Routes=[
   
@@ -16,9 +17,10 @@ const appRoutes: Routes=[
   {path:'album',component:AlbumsComponent},
   {path:'aboutUs',component:AboutUsComponent},
   {path:'foro',component:ForoComponent},
-  {path: 'login', component:LoginComponent},
-  {path: 'registro', component:RegistroComponent},
-  {path: '', component:InicioComponent},
+  {path:'login', component:LoginComponent},
+  {path:'registro', component:RegistroComponent},
+  {path:'miPerfil', component:EditarPerfilComponent},
+  {path:'', component:InicioComponent},
   {path:'**',redirectTo:""},
 
 ];

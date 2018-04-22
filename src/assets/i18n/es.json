@@ -4,6 +4,7 @@
     "header-nav-foro":"Foro",
     "header-nav-miCuenta":"Mi Cuenta",
     "header-nav-iniciarSesion":"Iniciar Sesion",
+    "header-nav-miperfil":"Mi Perfil",
     
     "login-bienvenido":"Bienvenido",
     "login-ametrajub":"Ametrajub A.C.",
@@ -15,6 +16,15 @@
     "login-button-iniciarSesion":"Iniciar Sesión",
     "login-button-registro":"Registrarse",
 
+
+    "registro-nombres":"Nombre(s)",
+    "registro-empresa":"Empresa",
+    "registro-sector":"Sector",
+    "registro-Sexo":"Sexo",
+    "registro-Hombre":"Hombre",
+    "registro-Mujer":"Mujer",
+    "registro-apellidoPaterno":"Primer Apellido",
+    "registro-apellidoMaterno":"Segundo Apellido",
     "registro-bienvenido":"Bienvenido",
     "registro-nuevoRegistro":"Nuevo Registro",
     "registro-email":"Correo Electrónico",

@@ -12,6 +12,9 @@ export class Usuario {
         public empresa:string,
         public sector:string,
         public isAdmin:Boolean,
+        public pais:string,
+        public ciudad:string,
+        public estado:string,
         public fotoPerfil:string
     ) {
         
