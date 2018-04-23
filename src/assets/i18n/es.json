@@ -120,5 +120,13 @@
     "registro-album-descripcion":"Descripción",
     "registro-album-nuevoRegistro":"Nuevo Albúm",
     "registro-album-fecha":"Fecha",  
-    "registro-album-button":"Guardar"
+    "registro-album-button":"Guardar",
+
+    "editar-evento":"Mi Evento",
+    "editar-evento-button":"Eliminar",
+
+    "editar-album":"Mi Album",
+    "editar-album-button":"Eliminar",
+
+    "editar-button-eliminar":"Eliminar"
 }

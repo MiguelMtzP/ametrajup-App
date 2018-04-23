@@ -118,5 +118,13 @@
     "registro-album-descripcion":"Description",
     "registro-album-nuevoRegistro":"New Album",
     "registro-album-fecha":"Date",  
-    "registro-album-button":"Save"
+    "registro-album-button":"Save",
+
+    "editar-evento":"My Event",
+    "editar-evento-button":"Delete",
+
+    "editar-album":"My Album",
+    "editar-album-button":"Delete",
+
+    "editar-button-eliminar":"Delete"
 }

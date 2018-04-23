@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PreviewAlbumComponent } from './preview-album.component';
+import { EditarEventoComponent } from './editar-evento.component';
 
-describe('PreviewAlbumComponent', () => {
-  let component: PreviewAlbumComponent;
-  let fixture: ComponentFixture<PreviewAlbumComponent>;
+describe('EditarEventoComponent', () => {
+  let component: EditarEventoComponent;
+  let fixture: ComponentFixture<EditarEventoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PreviewAlbumComponent ]
+      declarations: [ EditarEventoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PreviewAlbumComponent);
+    fixture = TestBed.createComponent(EditarEventoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

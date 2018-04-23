@@ -26,6 +26,8 @@ import { DetailEventoComponent } from './detail-evento/detail-evento.component';
 import { PreviewAlbumComponent } from './preview-album/preview-album.component';
 import { CrearEventoComponent } from './crear-evento/crear-evento.component';
 import { CrearAlbumComponent } from './crear-album/crear-album.component';
+import { EditarAlbumComponent } from './editar-album/editar-album.component';
+import { EditarEventoComponent } from './editar-evento/editar-evento.component';
 
 
 @NgModule({
@@ -61,7 +63,9 @@ import { CrearAlbumComponent } from './crear-album/crear-album.component';
             DetailEventoComponent,
             PreviewAlbumComponent,
             CrearEventoComponent,
-            CrearAlbumComponent
+            CrearAlbumComponent,
+            EditarAlbumComponent,
+            EditarEventoComponent
   ],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]
