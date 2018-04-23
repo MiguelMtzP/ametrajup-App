@@ -13,6 +13,10 @@ import { EditarPerfilComponent } from "./editar-perfil/editar-perfil.component";
 import { RegistroComponent } from './registro/registro.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { DetalleForoComponent } from './detalle-foro/detalle-foro.component';
+import { CrearEventoComponent } from './crear-evento/crear-evento.component';
+import { CrearAlbumComponent } from './crear-album/crear-album.component';
+import { EditarAlbumComponent } from './editar-album/editar-album.component';
+import { EditarEventoComponent } from './editar-evento/editar-evento.component';
 
 const appRoutes: Routes=[
   
@@ -24,6 +28,10 @@ const appRoutes: Routes=[
   {path:'login', component:LoginComponent},
   {path:'registro', component:RegistroComponent},
   {path:'miPerfil', component:EditarPerfilComponent},
+  {path:'newEvent', component:CrearEventoComponent},
+  {path:'newAlbum', component:CrearAlbumComponent},
+  {path:'myAlbum', component:EditarAlbumComponent},
+  {path:'myEvento', component:EditarEventoComponent},
   {path:'', component:InicioComponent},
   {path:'**',redirectTo:""},
 

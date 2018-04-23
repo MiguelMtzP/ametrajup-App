@@ -1,3 +1,129 @@
-<p>
-  editar-perfil works!
-</p>
+<div class="top card border-dark mb-3">
+  <div class="card-header">
+   <div class="text-center">
+     <h1 translate>editar-miPerfil</h1>
+   </div> 
+ </div>
+  <div class="card-body">
+    <form #forma = "ngForm" (ngSubmit) ="enviaForm()" >
+   <div class="form-group">
+
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
+      </div>
+      <div class="form-group col-md-8">
+          <label for="foto" translate>registro-foto</label>
+          <input type="file" #foto = "ngModel"  accept="image/jpeg"  (change)="uploadImage($event)" name="foto" [(ngModel)]="user.fotoPerfil" class="form-control" id="foto" placeholder="">
+        </div>
+     
+     <div class="form-group">
+       <label for="nombre"  translate>registro-nombres</label>
+       <input type="text" class="form-control" name="nombre" #nombre = "ngModel" [(ngModel)] ="user.nombre" id="nombre" placeholder="">
+     </div>
+     
+     <div class="form-group">
+         <label for="ap1"  translate>registro-apellidoPaterno</label>
+         <input type="text" #apellidoPaterno = "ngModel" name="apellidoPaterno" [(ngModel)] ="user.apellidoPaterno" class="form-control" id="ap1" placeholder="">
+     </div>
+     
+     <div class="form-group">
+       <label for="ap2"  translate>registro-apellidoMaterno</label>
+       <input type="text" #apellidoMaterno = "ngModel" name="apellidoMaterno" [(ngModel)] ="user.apellidoMaterno" class="form-control" id="ap2" placeholder="">
+     </div>
+ 
+     <div class="form-group">      
+         <label for="inputEmail"  translate>registro-email</label>
+         <input type="email" class="form-control" #mail = "ngModel" name="mail" [(ngModel)] ="user.correo" id="inputEmail" placeholder="">
+       </div>
+       <div class="form-group">
+         <label for="inputPassword"  translate>registro-pass</label>
+         <input type="password" #password = "ngModel" name="password" [(ngModel)] ="user.contrasenia" class="form-control" id="inputPassword" placeholder="">
+       </div>
+       <div class="form-group">
+           <label for="ocupacion"  translate>registro-ocupacion</label>
+           <input type="text" #ocupacion = "ngModel" name="ocupacion" [(ngModel)] ="user.ocupacion" class="form-control" id="ocupacion" placeholder="">
+       </div>
+     </div>
+ 
+     <div class="form-group">
+       <label for="empresa"  translate>registro-empresa</label>
+       <input type="text" #empresa = "ngModel" name="empresa" [(ngModel)] ="user.empresa" class="form-control" id="empresa" placeholder="">
+     </div>
+ 
+     <div class="form-group">
+       <label for="sector"  translate>registro-sector</label>
+       <input type="text" #sector = "ngModel" name="sector" [(ngModel)] ="user.sector" class="form-control" id="sector" placeholder="">
+     </div>
+ 
+     <div class="row">
+ 
+       <fieldset class="form-group col-md-4">
+         <div class="row">
+           <legend class="col-form-label col-sm-3 pt-0" translate>registro-Sexo</legend>
+           <div class="col-sm-9">
+             <div class="form-check">
+               <input class="form-check-input" type="radio" #sexo = "ngModel" name="sexo" [(ngModel)] ="user.genero" id="gridRadios1" value="M" checked>
+               <label class="form-check-label" for="gridRadios1" translate>
+                 registro-Hombre
+               </label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="radio" #sexo = "ngModel" name="sexo" [(ngModel)] ="user.genero" id="gridRadios2" value="F">
+               <label class="form-check-label" for="gridRadios2" translate>
+                 registro-Mujer
+               </label>
+             </div>
+             
+           </div>
+         </div>
+       </fieldset>
+       
+     </div>
+       
+       <div class="form-row">
+         <div class="form-group col-md-3">
+           <label for="inputCountry" translate>registro-pais</label>
+             <select id="inputCountry" class="form-control" #pais = "ngModel" name="pais" [(ngModel)]="user.pais" >
+               <option selected translate>registro-pais1</option>
+               <option translate>registro-pais2</option>
+               <option translate>registro-pais3</option>
+               <option translate>registro-pais4</option>
+               <option translate>registro-pais5</option>
+               <option translate>registro-pais6</option>
+               <option translate>registro-pais7</option>
+               <option translate>registro-pais8</option>
+               <option translate>registro-pais9</option>
+               <option translate>registro-pais10</option>              
+               <option translate>registro-pais11</option>
+               <option translate>registro-pais12</option>
+               <option translate>registro-pais13</option>
+               <option translate>registro-pais14</option>
+               <option translate>registro-pais15</option>
+               <option translate>registro-pais16</option>
+             </select>
+           </div>
+           <div class="form-group col-md-3">
+               <label for="inputCiudad" translate>registro-ciudad</label>
+               <input type="text" class="form-control" #ciudad = "ngModel" name="ciudad" [(ngModel)]="user.ciudad" id="inputCiudad" placeholder="">  
+             </div>
+       <div class="form-group col-md-3">
+           <label for="inputEstado" translate>registro-estado</label>
+           <input type="text" #estado = "ngModel" name="estado" [(ngModel)]="user.estado" class="form-control" id="inputEstado" placeholder="">
+       </div>
+       <div class="form-group col-md-3">
+         <label for="inputTelefono"translate>registro-telefono</label>
+         <input type="text" class="form-control" #telefono = "ngModel" name="telefono" [(ngModel)]="user.telefono" id="inputTelefono" placeholder="">
+       </div>
+       
+     </div>
+     <div class="row  d-flex justify-content-center">
+       <div class="form-group col-md-4 mt-md-4">
+         <button type="submit" [disabled]="!isLoaded" class="btn btn-outline-primary btn-block btn-lg" translate>editar-button-guardar</button>
+       </div>
+       <div class="form-group col-md-4 mt-md-4">
+          <button type="submit" [disabled]="!isLoaded" class="btn btn-outline-primary btn-block btn-lg" translate>editar-button-eliminar</button>
+        </div>
+     </div>
+   </form>
+  </div>
+ </div>

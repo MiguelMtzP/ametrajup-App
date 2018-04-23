@@ -23,6 +23,10 @@ import { AlbumsComponent } from './albums/albums.component';
 import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
 import { TruncatePipe } from './pipes/Truncate.pipe';
 import { DetalleForoComponent } from './detalle-foro/detalle-foro.component';
+import { CrearEventoComponent } from './crear-evento/crear-evento.component';
+import { CrearAlbumComponent } from './crear-album/crear-album.component';
+import { EditarAlbumComponent } from './editar-album/editar-album.component';
+import { EditarEventoComponent } from './editar-evento/editar-evento.component';
 
 
 @NgModule({
@@ -55,7 +59,11 @@ import { DetalleForoComponent } from './detalle-foro/detalle-foro.component';
             AlbumsComponent,
             EditarPerfilComponent,
             TruncatePipe,
-            DetalleForoComponent
+            DetalleForoComponent,
+            CrearEventoComponent,
+            CrearAlbumComponent,
+            EditarAlbumComponent,
+            EditarEventoComponent
   ],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]

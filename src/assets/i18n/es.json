@@ -54,7 +54,8 @@
     "registro-estado":"Estado",
     "registro-estado2":"Estado",
     "registro-telefono":"Teléfono",
-    "registro-button-registro":"Registrarse",
+    "registro-button":"Registrarse",
+    "registro-foto":"Foto perfil",
 
     "aboutus-nuestraHistoria":"Nuestra Historia",
     "aboutus-nuestraHistoria-p1":"Nace con todas las formalidades y solemnidades legales el 28 de Enero de 2016. Por inquietud y necesidad de los señores José Manuel Emilio Lemus y Espinosa, Sergio Sánchez Flores y Juan Ramón Flores Martínez, entre otros muchos.",
@@ -62,7 +63,7 @@
     "aboutus-objetivoGeneral":"Objetivo General",
     "aboutus-objetivoGeneral-p1":"Nuestra razón de ser es llevar un mensaje de esperanza, nosotros que nos hemos dado cuenta de que muchas personas han perdido todo o casi todo, nos atrevemos a dedicar nuestro tiempo a ayudar a estos hermanos de sufrimiento. La razón de ayudar a otros es por que nos estamos ayudando a nosotros mismos en contemplar nuestro caracter y ayudar a otros a resolver sus problemas existenciales. Los invitamos a que marchemos juntos, unidos, con entereza, fuerza y esperanza a levantar a los muertos de espíritu.",
 
-    "contactanos":"Contáctanos",
+    "contactanos":"Contáctanos vía email",
     "contactanos-email":"Correo Electrónico",
     "contactanos-ocupacion":"Ocupación",
     "contactanos-telefono":"Teléfono",
@@ -73,6 +74,29 @@
     "contactanos-interes4":"Donaciones",
     "contactanos-mensaje":"Mensaje adicional",
     "contactanos-button-registrarse":"Enviar",
+    "contactanos-via":"Contactos Alternos",
+    "contactanos-tel": "Teléfono de oficina: (222)2-22-22-22",
+    
+    "inicio-servicio":"Servicios que ofrecemos:",
+    "inicio-servicio-asesoria":"Asesoría",
+    "inicio-servicio-asesoria-legal":"Legal",
+    "inicio-servicio-asesoria-juridica":"Jurídica",
+    "inicio-servicio-curso":"Cursos de capacitación",
+    "inicio-servicio-curso1":"Plomería",
+    "inicio-servicio-curso2":"Electricidad",
+    "inicio-servicio-curso3":"Panadería",
+    "inicio-servicio-curso4":"Carpintería",
+    "inicio-servicio-curso5":"Corte y Conflexión",
+    "inicio-servicio-pago":"Asesoría en pagos",
+    "inicio-servicio-pago1":"Afore",
+    "inicio-servicio-pago2":"Gastos funerarios",
+    "inicio-servicio-pago3":"Pliegos testamentarios",
+    "inicio-servicio-familiar":"Orientación Familiar",
+    "inicio-servicio-familiar1":"Drogadicción",
+    "inicio-servicio-familiar2":"Alcoholismo",
+    "inicio-servicio-familiar3":"Deserción Escolar",
+    "inicio-servicio-familiar4":"Violencia contra la mujer",
+    "inicio-servicio-familiar5":"Desintegración Familiar",
 
     "inicio-mesaDirectiva":"Mesa Directiva",
     "inicio-presidente":"Presidente",
@@ -80,15 +104,29 @@
     "inicio-tesorero":"Tesorero",
     "inicio-p":"José Manuel Emilio Lemus y Espinosa",
     "inicio-s":"Sergio Sánchez Flores",
-    "inicio-t":"Juan Ramón Flores Martínez"
-    
-    
-    
-    
-    
-    
-    
-    
+    "inicio-t":"Juan Ramón Flores Martínez",
 
+    "editar-button-guardar":"Guardar",
+    "editar-miPerfil":"Mi perfil",
 
+    "registro-evento-nombres":"Nombre",
+    "registro-evento-descripcion":"Descripción",
+    "registro-evento-nuevoRegistro":"Nuevo Evento",
+    "registro-evento-fecha":"Fecha",  
+    "registro-evento-foto":"Foto perfil",
+    "registro-evento-button":"Guardar",
+
+    "registro-album-nombres":"Nombre",
+    "registro-album-descripcion":"Descripción",
+    "registro-album-nuevoRegistro":"Nuevo Albúm",
+    "registro-album-fecha":"Fecha",  
+    "registro-album-button":"Guardar",
+
+    "editar-evento":"Mi Evento",
+    "editar-evento-button":"Eliminar",
+
+    "editar-album":"Mi Album",
+    "editar-album-button":"Eliminar",
+
+    "editar-button-eliminar":"Eliminar"
 }
