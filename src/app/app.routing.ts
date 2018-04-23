@@ -12,6 +12,9 @@ import { ForoComponent } from "./foro/foro.component";
 import { EditarPerfilComponent } from "./editar-perfil/editar-perfil.component";
 import { RegistroComponent } from './registro/registro.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
+import { PreviewAlbumComponent } from './preview-album/preview-album.component';
+import { CrearEventoComponent } from './crear-evento/crear-evento.component';
+import { CrearAlbumComponent } from './crear-album/crear-album.component';
 
 const appRoutes: Routes=[
   
@@ -22,6 +25,9 @@ const appRoutes: Routes=[
   {path:'login', component:LoginComponent},
   {path:'registro', component:RegistroComponent},
   {path:'miPerfil', component:EditarPerfilComponent},
+  {path:'allAlbum', component:PreviewAlbumComponent},
+  {path:'newEvent', component:CrearEventoComponent},
+  {path:'newAlbum', component:CrearAlbumComponent},
   {path:'', component:InicioComponent},
   {path:'**',redirectTo:""},
 

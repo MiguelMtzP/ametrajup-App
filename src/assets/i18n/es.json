@@ -107,5 +107,18 @@
     "inicio-t":"Juan Ramón Flores Martínez",
 
     "editar-button-guardar":"Guardar",
-    "editar-miPerfil":"Mi perfil"
+    "editar-miPerfil":"Mi perfil",
+
+    "registro-evento-nombres":"Nombre",
+    "registro-evento-descripcion":"Descripción",
+    "registro-evento-nuevoRegistro":"Nuevo Evento",
+    "registro-evento-fecha":"Fecha",  
+    "registro-evento-foto":"Foto perfil",
+    "registro-evento-button":"Guardar",
+
+    "registro-album-nombres":"Nombre",
+    "registro-album-descripcion":"Descripción",
+    "registro-album-nuevoRegistro":"Nuevo Albúm",
+    "registro-album-fecha":"Fecha",  
+    "registro-album-button":"Guardar"
 }

@@ -21,6 +21,11 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
+import { PreviewEventoComponent } from './preview-evento/preview-evento.component';
+import { DetailEventoComponent } from './detail-evento/detail-evento.component';
+import { PreviewAlbumComponent } from './preview-album/preview-album.component';
+import { CrearEventoComponent } from './crear-evento/crear-evento.component';
+import { CrearAlbumComponent } from './crear-album/crear-album.component';
 
 
 @NgModule({
@@ -51,7 +56,12 @@ import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
             LoginComponent,
             RegistroComponent,
             AlbumsComponent,
-            EditarPerfilComponent
+            EditarPerfilComponent,
+            PreviewEventoComponent,
+            DetailEventoComponent,
+            PreviewAlbumComponent,
+            CrearEventoComponent,
+            CrearAlbumComponent
   ],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]
