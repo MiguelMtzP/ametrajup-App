@@ -21,6 +21,8 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
+import { TruncatePipe } from './pipes/Truncate.pipe';
+import { DetalleForoComponent } from './detalle-foro/detalle-foro.component';
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
             LoginComponent,
             RegistroComponent,
             AlbumsComponent,
-            EditarPerfilComponent
+            EditarPerfilComponent,
+            TruncatePipe,
+            DetalleForoComponent
   ],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]

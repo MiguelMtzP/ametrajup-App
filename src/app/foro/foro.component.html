@@ -1,3 +1,19 @@
-<p>
-  foro works!
-</p>
+
+<div class="row mb-md-3" *ngFor = "let foro of foros" >
+    <div class="card border-dark col-md-12" >
+      <a  [routerLink]="['/detalleForo',foro._id]" >
+        
+        <div class="card-body text-dark">
+          <h5 class="card-title">{{foro.titulo}}</h5>
+          <h6 class="card-subtitle text-muted"><span class="fas fa-user"></span> {{foro.idUsuario.nombre}} {{foro.idUsuario.apellidoPaterno}}</h6>
+          <p class="card-text">{{foro.descripcion|truncate:130}}</p>
+          <div class="row d-flex justify-content-between">
+            <h6 class="card-subtitle col-md-3 text-muted"><span class="fas fa-comment-alt"></span> {{foro.comentarios}} Comments</h6>
+            <h6 class="card-subtitle col-md-3 text-muted"><span class="fas fa-calendar-alt"></span> {{foro.fecha|date:"medium"}}</h6>
+            
+          </div>
+          
+        </div>
+      </a>
+    </div>
+  </div>

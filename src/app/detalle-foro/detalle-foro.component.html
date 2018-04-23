@@ -1,0 +1,59 @@
+<div class="jumbotron">
+  <h3 class="display-4">{{foro.titulo}}</h3>
+  <div class="row d-flex justify-content-between lead">
+    <p class="col-md-3 text-muted"><span class="fas fa-user"></span> {{foro.idUsuario.nombre}} {{foro.idUsuario.apellidoPaterno}} {{foro.idUsuario.apellidoMaterno}}</p>
+    <p class="col-md-3 text-muted"><span class="fas fa-calendar-alt"></span> {{foro.fecha|date:"mediumDate"}}</p>
+  </div>
+  <hr class="my-3">
+  <p class="">
+    {{foro.descripcion}}
+  </p>
+  <hr class="my-3">
+
+  <p class="lead">Fotos</p>
+  <div class="row d-flex flex-row">
+    <div class="col-md-2" *ngFor= "let foto of foro.idGaleria.files" >
+      <img class="img-thumbnail img-fluid"  src="{{foto.url}}" alt="Card image cap">
+    </div>
+  </div>
+  <hr class="my-3">
+  <p class="lead">Comentarios</p>
+  <div class="list-group">
+      <div  *ngFor="let comentario of comentarios; let i = index" class="list-group-item  list-group-item-action flex-column align-items-start">
+        <div class="d-flex justify-content-between">
+          <h5 class=" mb-1"><span class="fas fa-user"></span> {{comentario.idUsuario.nombre}} {{comentario.idUsuario.apellidoPaterno}} {{comentario.idUsuario.apellidoMaterno}}</h5>
+          <small class="text-muted">{{comentario.fecha|date:"medium"}}</small>
+        </div>
+        <p class="ml-4 pt-md-3 mb-1">{{comentario.mensaje}}</p>
+        <small class="text-muted" *ngIf = "comentario.isHidden" ><button class="btn btn-link btn-sm" (click)="muestraRespuestas(i)" >Ver respuestas...</button></small>
+        <div class="list-group" *ngIf = "!comentario.isHidden">
+            <div  *ngFor="let respuesta of comentario.respuestas" class="list-group-item list-group-item-info list-group-item-action flex-column align-items-start">
+              <div class="d-flex justify-content-between">
+                <h5 class=""><span class="fas fa-user"></span> {{respuesta.idUsuario.nombre}} {{respuesta.idUsuario.apellidoPaterno}} {{respuesta.idUsuario.apellidoMaterno}}</h5>
+                <small class="text-muted">{{respuesta.fecha|date:"medium"}}</small>
+              </div>
+              <p class="ml-4 mb-1">{{respuesta.mensaje}}</p>
+            </div>
+            <div *ngIf= "_authService.isLogged()" class="list-group-item list-group-item-light list-group-item-action flex-column align-items-start">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" name="comment{{i}}" [(ngModel)] = "newRespuesta" placeholder="Deja tu comentario" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" [disabled] = "newRespuesta == ''" (click) ="sendMessage(i)" ><span class="fas fa-comment-alt"></span> Comment</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div *ngIf= "_authService.isLogged()" class="list-group-item list-group-item-light list-group-item-action flex-column align-items-start">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" name="comment" [(ngModel)] = "newComentario" placeholder="Deja tu comentario" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" [disabled] = "newComentario == ''" (click) ="sendMessage(-1)" type="button"><span class="fas fa-comment-alt"></span> Comment</button>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  

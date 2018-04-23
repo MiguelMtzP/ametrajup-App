@@ -15,7 +15,7 @@ export class RegistroComponent implements OnInit {
   constructor(
     private _authService:AuthServiceService,
     private _router:Router
-  ) { 
+  ) {
     this.user = new Usuario("","","","","","","","","","","",false,"","","","")
     this.isLoaded= false
   }
