@@ -5,6 +5,7 @@
     "header-nav-miCuenta":"Mi Cuenta",
     "header-nav-iniciarSesion":"Iniciar Sesion",
     "header-nav-miperfil":"Mi Perfil",
+    "header-nav-album": "Galería",
     
     "login-bienvenido":"Bienvenido",
     "login-ametrajub":"Ametrajub A.C.",
@@ -75,9 +76,9 @@
     "contactanos-mensaje":"Mensaje adicional",
     "contactanos-button-registrarse":"Enviar",
     "contactanos-via":"Contactos Alternos",
-    "contactanos-tel": "Teléfono de oficina: (222)2-22-22-22",
+    "contactanos-tel": "Teléfono de oficina: 22-23-26-79-87",
     
-    "inicio-servicio":"Servicios que ofrecemos:",
+    "inicio-servicio":"Nuestros servicios",
     "inicio-servicio-asesoria":"Asesoría",
     "inicio-servicio-asesoria-legal":"Legal",
     "inicio-servicio-asesoria-juridica":"Jurídica",
@@ -97,14 +98,16 @@
     "inicio-servicio-familiar3":"Deserción Escolar",
     "inicio-servicio-familiar4":"Violencia contra la mujer",
     "inicio-servicio-familiar5":"Desintegración Familiar",
+    "inicio-verMas":"Ver más",
 
     "inicio-mesaDirectiva":"Mesa Directiva",
     "inicio-presidente":"Presidente",
     "inicio-secretario":"Secretario",
     "inicio-tesorero":"Tesorero",
     "inicio-p":"José Manuel Emilio Lemus y Espinosa",
-    "inicio-s":"Sergio Sánchez Flores",
+    "inicio-s":"Sergio Sánchez y Flores",
     "inicio-t":"Juan Ramón Flores Martínez",
+    "inicio-event/news":"Eventos/Noticias",
 
     "editar-button-guardar":"Guardar",
     "editar-miPerfil":"Mi perfil",
