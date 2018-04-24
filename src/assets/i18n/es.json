@@ -64,7 +64,7 @@
     "aboutus-objetivoGeneral":"Objetivo General",
     "aboutus-objetivoGeneral-p1":"Nuestra razón de ser es llevar un mensaje de esperanza, nosotros que nos hemos dado cuenta de que muchas personas han perdido todo o casi todo, nos atrevemos a dedicar nuestro tiempo a ayudar a estos hermanos de sufrimiento. La razón de ayudar a otros es por que nos estamos ayudando a nosotros mismos en contemplar nuestro caracter y ayudar a otros a resolver sus problemas existenciales. Los invitamos a que marchemos juntos, unidos, con entereza, fuerza y esperanza a levantar a los muertos de espíritu.",
 
-    "contactanos":"Contáctanos vía email",
+    "contactanos":"Contáctanos",
     "contactanos-email":"Correo Electrónico",
     "contactanos-ocupacion":"Ocupación",
     "contactanos-telefono":"Teléfono",
@@ -75,7 +75,7 @@
     "contactanos-interes4":"Donaciones",
     "contactanos-mensaje":"Mensaje adicional",
     "contactanos-button-registrarse":"Enviar",
-    "contactanos-via":"Contactos Alternos",
+    "contactanos-via":"Contactos",
     "contactanos-tel": "Teléfono de oficina: 22-23-26-79-87",
     
     "inicio-servicio":"Nuestros servicios",
@@ -99,6 +99,7 @@
     "inicio-servicio-familiar4":"Violencia contra la mujer",
     "inicio-servicio-familiar5":"Desintegración Familiar",
     "inicio-verMas":"Ver más",
+    "inicio-user":"Usuario: live:ame130813",
 
     "inicio-mesaDirectiva":"Mesa Directiva",
     "inicio-presidente":"Presidente",
