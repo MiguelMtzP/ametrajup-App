@@ -1,10 +1,11 @@
 <div class="top card border-dark mb-3">
   <div class="card-header">
-   <div class="text-center">
-     <h1 translate>editar-miPerfil</h1>
-   </div> 
- </div>
+    <div class="text-center">
+      <h1 translate>editar-miPerfil</h1>
+    </div> 
+  </div>
   <div class="card-body">
+              <!-- 
     <form #forma = "ngForm" (ngSubmit) ="enviaForm()" >
    <div class="form-group">
 
@@ -124,6 +125,81 @@
           <button type="submit" [disabled]="!isLoaded" class="btn btn-outline-primary btn-block btn-lg" translate>editar-button-eliminar</button>
         </div>
      </div>
-   </form>
+    </form>
+  -->
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-3 mb-md-4">
+      <img src="{{profile.fotoPerfil}}" class="img-thumbnail img-fluid" alt="">
+    </div>
+  </div>
+
+  <table class="table table-striped">
+      
+      <tbody>
+          <tr>
+            <th scope="row" translate>registro-nombres</th>
+            <td>{{profile.nombre}} {{profile.apellidoPaterno}} {{profile.apellidoMaterno}} </td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-empresa</th>
+            <td> {{profile.empresa}} </td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-sector</th>
+            <td>{{profile.sector}}</td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-Sexo</th>
+            <td>
+              {{profile.genero}}
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-email</th>
+            <td>
+              {{profile.correo}}
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-ocupacion</th>
+            <td>
+              {{profile.ocupacion}}
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-pais</th>
+            <td>
+              {{profile.pais}}
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-ciudad</th>
+            <td>
+              {{profile.ciudad}}
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-estado</th>
+            <td>
+              {{profile.estado}}
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" translate >registro-telefono</th>
+            <td>
+              {{profile.telefono}}
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" translate>registro-pass</th>
+            <td>
+              {{profile.contrasenia}}
+            </td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
   </div>
  </div>

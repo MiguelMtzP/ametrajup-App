@@ -4,28 +4,33 @@
       <h2 translate>contactanos</h2>
     </div>
     <div class="card-body">
-        <form>
+        <form (ngSubmit)="submit()" #forma = "ngForm">
             <div class="form-group">
                 
-                <div class="form-group">
+              <div class="form-group">
                     
-                  <label for="inputEmail"  translate>contactanos-email</label>
-                  <input type="email" class="form-control" id="inputEmail" placeholder="">
-                </div>
+                <label for="inputEmail"  translate>contactanos-nombre</label>
+                <input type="text" name="nombref" [(ngModel)] = "nombre" #nombref= "ngModel" class="form-control" id="inputEmail" placeholder="" required>
+              </div>
+
+              <div class="form-group">
+                <label for="inputEmail"  translate>contactanos-email</label>
+                <input type="email" name="emailf" [(ngModel)] = "email" #emailf= "ngModel" class="form-control" id="inputEmail" placeholder="" required pattern="^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$">
+              </div>
                 <div class="form-group">
                   <label for="inputWork"  translate>contactanos-ocupacion</label>
-                  <input type="text" class="form-control" id="inputWork" placeholder="">
+                  <input type="text" class="form-control" id="inputWork" name="ocupacionf" #ocupacionf= "ngModel" [(ngModel)] = "ocupacion" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label for="inputTelefono"  translate>contactanos-telefono</label>
-                    <input type="text" class="form-control" id="inputTelefono" placeholder="">
+                    <input type="text" class="form-control" name="telefonof" [(ngModel)] = "telefono" #telefonof= "ngModel" id="inputTelefono" placeholder="" required>
                 </div>
               </div>
               
               
                   <div class="form-group">
                       <label for="inputInteres" translate>contactanos-interes</label>
-                      <select id="inputInteres" class="form-control">
+                      <select id="inputInteres" class="form-control" name="asuntof" [(ngModel)] = "asunto" #asuntof= "ngModel" required>
                         <option selected translate>contactanos-interes1</option>
                         <option translate>contactanos-interes2</option>
                         <option translate>contactanos-interes3</option>
@@ -34,12 +39,20 @@
                     </div>
                     <div class="form-group">
                         <label for="inputMensaje" translate>contactanos-mensaje</label>
-                        <textarea class="form-control" id="textTareaMensaje" rows="3"></textarea>  
+                        <textarea class="form-control" name="mensajef" [(ngModel)] = "mensaje" id="textTareaMensaje" #mensajef= "ngModel" rows="3" required></textarea>  
                       </div>
                 
                 
-              
-              <button type="submit" class="btn btn-primary" translate>contactanos-button-registrarse</button>
+                      <div class="alert alert-success" *ngIf ="processed" role="alert">
+                       <span class="alert-link">Muy Bien!</span> Tu solicitud a sido recibida.
+                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                       </button>
+                      </div>
+                      <div class="alert alert-warning" role="alert" *ngIf = "isprocesing" >
+                        <span class="alert-link">Espera.</span> Estamos procesando tu solicitud...
+                      </div>
+              <button type="submit" [disabled]= "!forma.valid " *ngIf = "!isprocesing" class="btn btn-primary" translate>contactanos-button-registrarse</button>
             </form>
     </div>
 </div>

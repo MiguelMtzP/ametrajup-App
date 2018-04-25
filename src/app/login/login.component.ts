@@ -39,6 +39,9 @@ export class LoginComponent implements OnInit {
       localStorage.setItem("ocupacion",res.user.ocupacion)
       localStorage.setItem("sector",res.user.sector)
       localStorage.setItem("id",res.user._id)
+      localStorage.setItem("pais",res.user.pais)
+      localStorage.setItem("estado",res.user.estado)
+      localStorage.setItem("ciudad",res.user.ciudad)
       localStorage.setItem("telefono",res.user.telefono)
       if (res.user.isAdmin&&false){
         //redirige al admin view

@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private _authServise: AuthServiceService,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private _router:Router
    ) { 
      this.idioma = "es"
     this.translate.setDefaultLang("es")
@@ -29,6 +30,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     
+  }
+  logout(){
+    localStorage.clear()
+    this._router.navigate(["/"])
   }
 
 }

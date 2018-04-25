@@ -42,23 +42,7 @@ export class AuthServiceService {
     formData.append("pais",user.pais)
     formData.append("ciudad",user.ciudad)
     formData.append("estado",user.estado)
-    /*return new Promise((resolve,reject)=>{
-      var xhr= new XMLHttpRequest();
-      xhr.onreadystatechange= ()=>{
-        if(xhr.readyState==4){
-          if(xhr.status==200){
-            resolve(JSON.parse(xhr.response));
-          }else{
-            reject(xhr.response);
-          }
-        }
-      }
-      xhr.open('POST',this.url+"usuarios/",true);
-      xhr.setRequestHeader("Authorization",jwtAuth);
-      //cabeceras
-      xhr.send(formData);
-    });
-    */
+   
     const headers = new Headers({"Authorization":jwtAuth});
     let options = new RequestOptions({ headers });
     let url = this.url+"usuarios/";
