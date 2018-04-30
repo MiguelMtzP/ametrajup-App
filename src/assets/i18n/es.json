@@ -122,12 +122,14 @@
     "registro-evento-fecha":"Fecha",  
     "registro-evento-foto":"Foto perfil",
     "registro-evento-button":"Guardar",
+    "registro-evento-cancelar":"Cancelar",
 
     "registro-album-nombres":"Nombre",
     "registro-album-descripcion":"Descripción",
     "registro-album-nuevoRegistro":"Nuevo Albúm",
     "registro-album-fecha":"Fecha",  
     "registro-album-button":"Guardar",
+    "registro-album-cancelar":"Cancelar",
 
     "editar-evento":"Mi Evento",
     "editar-evento-button":"Eliminar",
