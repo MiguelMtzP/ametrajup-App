@@ -129,6 +129,8 @@
     "registro-album-fecha":"Date",  
     "registro-album-button":"Save",
     "registro-album-cancelar":"Cancel",
+    "registro-album-foto":"Photo",
+    "registro-album-foto-eliminar":"Delete",
 
     "editar-evento":"My Event",
     "editar-evento-button":"Delete",

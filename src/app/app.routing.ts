@@ -17,9 +17,9 @@ import { CrearEventoComponent } from './crear-evento/crear-evento.component';
 import { CrearAlbumComponent } from './crear-album/crear-album.component';
 import { EditarAlbumComponent } from './editar-album/editar-album.component';
 import { EditarEventoComponent } from './editar-evento/editar-evento.component';
-import { TemporalEvento1Component } from './temporal-evento1/temporal-evento1.component';
-import { TemporalEvento2Component } from './temporal-evento2/temporal-evento2.component';
-import { TemporalEvento3Component } from './temporal-evento3/temporal-evento3.component';
+import { AdmiPerfilComponent } from './admi-perfil/admi-perfil.component';
+import { VerEventoComponent } from './ver-evento/ver-evento.component';
+import { ViewEventComponent } from './view-event/view-event.component';
 
 const appRoutes: Routes=[
   
@@ -34,10 +34,10 @@ const appRoutes: Routes=[
   {path:'newEvent', component:CrearEventoComponent},
   {path:'newAlbum', component:CrearAlbumComponent},
   {path:'myAlbum', component:EditarAlbumComponent},
-  {path:'myEvento', component:EditarEventoComponent},
-  {path:'tempEvento1', component:TemporalEvento1Component},
-  {path:'tempEvento2', component:TemporalEvento2Component},
-  {path:'tempEvento3', component:TemporalEvento3Component},
+  {path:'myEvent', component:EditarEventoComponent},
+  {path:'admi', component:AdmiPerfilComponent},
+  {path:'verEventoAdmi', component:VerEventoComponent},
+  {path:'verEvento', component:ViewEventComponent},
   {path:'', component:InicioComponent},
   {path:'**',redirectTo:""},
 

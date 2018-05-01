@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TemporalEvento3Component } from './temporal-evento3.component';
+import { AdmiPerfilComponent } from './admi-perfil.component';
 
-describe('TemporalEvento3Component', () => {
-  let component: TemporalEvento3Component;
-  let fixture: ComponentFixture<TemporalEvento3Component>;
+describe('AdmiPerfilComponent', () => {
+  let component: AdmiPerfilComponent;
+  let fixture: ComponentFixture<AdmiPerfilComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TemporalEvento3Component ]
+      declarations: [ AdmiPerfilComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TemporalEvento3Component);
+    fixture = TestBed.createComponent(AdmiPerfilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

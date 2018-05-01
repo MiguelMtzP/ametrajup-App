@@ -130,6 +130,8 @@
     "registro-album-fecha":"Fecha",  
     "registro-album-button":"Guardar",
     "registro-album-cancelar":"Cancelar",
+    "registro-album-foto":"Foto(s)",
+    "registro-album-foto-eliminar":"Eliminar foto",
 
     "editar-evento":"Mi Evento",
     "editar-evento-button":"Eliminar",

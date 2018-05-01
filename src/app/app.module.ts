@@ -30,6 +30,9 @@ import { EditarEventoComponent } from './editar-evento/editar-evento.component';
 import { TemporalEvento1Component } from './temporal-evento1/temporal-evento1.component';
 import { TemporalEvento2Component } from './temporal-evento2/temporal-evento2.component';
 import { TemporalEvento3Component } from './temporal-evento3/temporal-evento3.component';
+import { AdmiPerfilComponent } from './admi-perfil/admi-perfil.component';
+import { VerEventoComponent } from './ver-evento/ver-evento.component';
+import { ViewEventComponent } from './view-event/view-event.component';
 
 
 @NgModule({
@@ -69,7 +72,10 @@ import { TemporalEvento3Component } from './temporal-evento3/temporal-evento3.co
             EditarEventoComponent,
             TemporalEvento1Component,
             TemporalEvento2Component,
-            TemporalEvento3Component
+            TemporalEvento3Component,
+            AdmiPerfilComponent,
+            VerEventoComponent,
+            ViewEventComponent
   ],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]
