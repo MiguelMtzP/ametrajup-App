@@ -28,6 +28,7 @@ export class CrearForoComponent implements OnInit {
   }
 
   cargaFotos(event:any,forma){
+
     let arrayFiles = event.target.files
     for (const file of arrayFiles) {
       let image = <File> file

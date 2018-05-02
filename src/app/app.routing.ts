@@ -17,16 +17,10 @@ import { CrearEventoComponent } from './crear-evento/crear-evento.component';
 import { CrearAlbumComponent } from './crear-album/crear-album.component';
 import { EditarAlbumComponent } from './editar-album/editar-album.component';
 import { EditarEventoComponent } from './editar-evento/editar-evento.component';
-<<<<<<< HEAD
-import { TemporalEvento1Component } from './temporal-evento1/temporal-evento1.component';
-import { TemporalEvento2Component } from './temporal-evento2/temporal-evento2.component';
-import { TemporalEvento3Component } from './temporal-evento3/temporal-evento3.component';
-import { CrearForoComponent } from './crear-foro/crear-foro.component';
-=======
 import { AdmiPerfilComponent } from './admi-perfil/admi-perfil.component';
+import { CrearForoComponent } from './crear-foro/crear-foro.component';
 import { VerEventoComponent } from './ver-evento/ver-evento.component';
 import { ViewEventComponent } from './view-event/view-event.component';
->>>>>>> 141351e0028c0d76c29faf64427383df55651bad
 
 const appRoutes: Routes=[
   
