@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TemporalEvento2Component } from './temporal-evento2.component';
+import { VerEventoComponent } from './ver-evento.component';
 
-describe('TemporalEvento2Component', () => {
-  let component: TemporalEvento2Component;
-  let fixture: ComponentFixture<TemporalEvento2Component>;
+describe('VerEventoComponent', () => {
+  let component: VerEventoComponent;
+  let fixture: ComponentFixture<VerEventoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TemporalEvento2Component ]
+      declarations: [ VerEventoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TemporalEvento2Component);
+    fixture = TestBed.createComponent(VerEventoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
