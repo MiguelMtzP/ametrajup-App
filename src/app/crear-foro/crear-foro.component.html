@@ -1,0 +1,33 @@
+
+<div class="top card border-dark mb-3">
+    <div class="card-header">
+     <div class="text-center">
+       <h1 translate>foro-nuevo-head</h1>
+       
+     </div> 
+   </div>
+    <div  class="card-body">
+      <form #forma = "ngForm" (ngSubmit) ="enviaForm()" >
+        <div class="form-group">
+          
+          <div class="form-group">
+            <label for="nombre"  translate>foro-nuevo-titulo</label>
+            <input type="text" class="form-control" name="nombre" #nombre = "ngModel" [(ngModel)] ="foro.titulo" id="nombre" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="ap2"  translate>foro-nuevo-descripcion</label>
+            <textarea #descripcion = "ngModel" name="descripcion" [(ngModel)] ="foro.descripcion" class="form-control" id="ap2" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="ap2"  translate>foro-nuevo-fotos</label>
+            <input type="file" class="form-control" name="fotos" id="fotos"  accept="image/jpeg" (change) = "cargaFotos($event,forma)" multiple >
+          </div>
+        </div>
+        <div class="row  d-flex justify-content-center">
+         <div class="form-group col-md-4 mt-md-4">
+           <button type="submit" [disabled]="!forma.valid" class="btn btn-outline-primary btn-block btn-lg" translate>foro-nuevo-boton</button>
+         </div>
+       </div>
+     </form>
+    </div>
+  </div>

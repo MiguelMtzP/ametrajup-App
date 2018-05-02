@@ -14,7 +14,7 @@ import { AuthServiceService } from '../services/auth-service.service';
 })
 export class DetalleForoComponent implements OnInit {
 
-  public foro:Foro
+  public foro:any
   public comentarios: Array<Comentario>
   public TodosComentarios: Array<Comentario>
   public respuestas: Array<Comentario>
@@ -22,7 +22,7 @@ export class DetalleForoComponent implements OnInit {
   public newRespuesta : string
   constructor(
     private _foroService:ForoService,
-    private _authService:AuthServiceService,
+    public _authService:AuthServiceService,
     private _router:Router,
     private _route:ActivatedRoute
   ) { 
@@ -38,7 +38,7 @@ export class DetalleForoComponent implements OnInit {
     this.loadData()
   }
 
-  loadData(){
+  loadData(first:Boolean=true){
     this.comentarios = []
     this.TodosComentarios = []
     this.respuestas = []
@@ -47,7 +47,9 @@ export class DetalleForoComponent implements OnInit {
     this._route.params.forEach((params:Params)=>{
       this._foroService.getById(params["idForo"]).subscribe(
         res=>{
-          this.foro = res.foro
+          if (first) {
+            this.foro = res.foro
+          }
           this.TodosComentarios = res.commentarios
           for (const coment of this.TodosComentarios) {
             if (coment.idComentarioPadre==undefined) {
@@ -81,7 +83,7 @@ export class DetalleForoComponent implements OnInit {
       this._foroService.comentarForo(newComentario).subscribe(
         res=>{
           console.log(res);
-          this.loadData()
+          this.loadData(false)
         },
         err=>{
           console.log(err);

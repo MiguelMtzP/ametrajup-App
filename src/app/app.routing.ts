@@ -20,12 +20,14 @@ import { EditarEventoComponent } from './editar-evento/editar-evento.component';
 import { TemporalEvento1Component } from './temporal-evento1/temporal-evento1.component';
 import { TemporalEvento2Component } from './temporal-evento2/temporal-evento2.component';
 import { TemporalEvento3Component } from './temporal-evento3/temporal-evento3.component';
+import { CrearForoComponent } from './crear-foro/crear-foro.component';
 
 const appRoutes: Routes=[
   
   {path:'eventos',component:EventosComponent},
   {path:'album',component:AlbumsComponent},
   {path:'aboutUs',component:AboutUsComponent},
+  {path:"newForo",component:CrearForoComponent},
   {path:'foro',component:ForoComponent},
   {path:'detalleForo/:idForo',component:DetalleForoComponent},
   {path:'login', component:LoginComponent},

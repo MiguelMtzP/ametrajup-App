@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h3 class="display-4">{{foro.titulo}}</h3>
   <div class="row d-flex justify-content-between lead">
-    <p class="col-md-3 text-muted"><span class="fas fa-user"></span> {{foro.idUsuario.nombre}} {{foro.idUsuario.apellidoPaterno}} {{foro.idUsuario.apellidoMaterno}}</p>
+    <p class="col-md-4 text-muted"><span class="fas fa-user"></span> {{foro.idUsuario.nombre}} {{foro.idUsuario.apellidoPaterno}} {{foro.idUsuario.apellidoMaterno}}</p>
     <p class="col-md-3 text-muted"><span class="fas fa-calendar-alt"></span> {{foro.fecha|date:"mediumDate"}}</p>
   </div>
   <hr class="my-3">
@@ -11,11 +11,13 @@
   <hr class="my-3">
 
   <p class="lead">Fotos</p>
-  <div class="row d-flex flex-row">
-    <div class="col-md-2" *ngFor= "let foto of foro.idGaleria.files" >
-      <img class="img-thumbnail img-fluid"  src="{{foto.url}}" alt="Card image cap">
+  
+  <div class="card-columns">
+    <div class="card" *ngFor= "let foto of foro.idGaleria.files">
+      <img class=" img-fluid"  src="{{foto.url}}" alt="Card image cap">
     </div>
   </div>
+  
   <hr class="my-3">
   <p class="lead">Comentarios</p>
   <div class="list-group">

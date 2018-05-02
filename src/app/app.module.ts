@@ -30,6 +30,7 @@ import { EditarEventoComponent } from './editar-evento/editar-evento.component';
 import { TemporalEvento1Component } from './temporal-evento1/temporal-evento1.component';
 import { TemporalEvento2Component } from './temporal-evento2/temporal-evento2.component';
 import { TemporalEvento3Component } from './temporal-evento3/temporal-evento3.component';
+import { CrearForoComponent } from './crear-foro/crear-foro.component';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { TemporalEvento3Component } from './temporal-evento3/temporal-evento3.co
             EditarEventoComponent,
             TemporalEvento1Component,
             TemporalEvento2Component,
-            TemporalEvento3Component
+            TemporalEvento3Component,
+            CrearForoComponent
   ],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]

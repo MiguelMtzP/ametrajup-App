@@ -10,6 +10,7 @@ export class ContactoService {
 
   constructor(private _http:Http) { 
     this.url = "http://localhost:3000/"
+//    this.url = "http://167.99.235.43:3000/"
   }
 
   contacto(formContacto){

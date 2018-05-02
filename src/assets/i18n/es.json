@@ -9,6 +9,13 @@
     "header-nav-vermiperfil":"Ver Perfil",
     "header-nav-salir":"Cerrar Sesion",
     
+    "foro-nuevo-head":"Nuevo foro",
+    "foro-nuevo-titulo":"Titulo",
+    "foro-nuevo-descripcion":"Descripcion",
+    "foro-nuevo-fotos":"Fotos",
+    "foro-nuevo-boton":"Crear Foro",
+    "foro-lista-nuevoBoton":"Nuevo Foro",
+
     "login-bienvenido":"Bienvenido",
     "login-ametrajub":"Ametrajub A.C.",
     "login-email":"Correo Electrónico",

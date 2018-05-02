@@ -2,7 +2,10 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class UsuarioService {
-
-  constructor() { }
+  public url:string
+  constructor() {
+    this.url = "http://localhost:3000/"
+//    this.url = "http://167.99.235.43:3000/"
+   }
 
 }

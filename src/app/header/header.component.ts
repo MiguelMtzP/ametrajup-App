@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   public idioma :string
 
   constructor(
-    private _authServise: AuthServiceService,
+    public _authServise: AuthServiceService,
     private translate: TranslateService,
     private _router:Router
    ) { 

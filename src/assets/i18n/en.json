@@ -8,6 +8,12 @@
     "header-nav-vermiperfil":"View My account",
     "header-nav-salir":"Log Out",
 
+    "foro-nuevo-head":"New Forum",
+    "foro-nuevo-titulo":"Title",
+    "foro-nuevo-descripcion":"Description",
+    "foro-nuevo-fotos":"Photos",
+    "foro-nuevo-boton":"Create Forum",
+    "foro-lista-nuevoBoton":"New Forum",
 
     "login-bienvenido":"Welcome",
     "login-ametrajub":"Ametrajub A.C.",

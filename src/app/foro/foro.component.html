@@ -1,4 +1,7 @@
 
+<div class="row d-flex justify-content-end mb-2">
+    <button type="button" [routerLink] = "['/newForo']" class="btn btn-outline-primary" translate><span class="fas fa-file-alt"></span> foro-lista-nuevoBoton</button>
+</div>
 <div class="row mb-md-3" *ngFor = "let foro of foros" >
     <div class="card border-dark col-md-12" >
       <a  [routerLink]="['/detalleForo',foro._id]" >
